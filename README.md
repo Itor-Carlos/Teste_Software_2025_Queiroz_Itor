@@ -20,6 +20,7 @@
 
 A questão no Stack Overflow aborda a forma adequada de testar funções em Python que lançam exceções.
 
+![Imagem da questão no Stack Overflow](assets/image_question.png)
 ---
 
 ## 2. Solução utilizado
