@@ -18,9 +18,13 @@
 
 ## 1. Descrição do problema
 
-A questão no Stack Overflow aborda a forma adequada de testar funções em Python que lançam exceções.
+A questão no Stack Overflow aborda a forma adequada de testar funções em Python que lançam exceções. 
 
+*Pergunta escolhida:*
 ![Imagem da questão no Stack Overflow](assets/image_question.png)
+
+*Resposta adotada:*
+![Imagem da resposta adotada no Stack Overflow](assets/image_answer.png)
 ---
 
 ## 2. Solução utilizado
