@@ -17,14 +17,16 @@
 ---
 
 ## 1. Descrição do problema
-
 A questão no Stack Overflow aborda a forma adequada de testar funções em Python que lançam exceções. 
 
-*Pergunta escolhida:*
+### Pergunta escolhida
 ![Imagem da questão no Stack Overflow](assets/image_question.png)
+*Figura 1: Questão do Stack Overflow*
 
-*Resposta adotada:*
+### Resposta adotada
 ![Imagem da resposta adotada no Stack Overflow](assets/image_answer.png)
+*Figura 2: Resposta adotada*
+
 ---
 
 ## 2. Solução utilizado
@@ -36,10 +38,12 @@ A solução aceita no Stack Overflow utiliza o módulo ``unittest``, especificam
 Criação de uma classe para simular o problema com o nome ``Usuario`` no arquivo ``usuario.py``. Nessa classe é disposto um método chamado ``realizar_login`` que lança uma exceção do tipo ``ValueError`` caso o login ou a senha estejam incorretos. Abaixo uma imagem referente a classe ``Usuario``
 
 ![Imagem da classe Usuario no arquivo usuario.py](assets/image_usuario.png)
+*Figura 3: Classe Usuario*
 
 Criação de uma classe de testes unitários no arquivo ``test_usuario.py`` para testar o método ``realizar_login`` da classe ``Usuario``. Nesse arquivo foram criados dois métodos ``test_realizar_login_lanca_erro_com_senha_incorreta`` e o ``test_realizar_login_lanca_erro_com_login_incorreto`` Abaixo uma imagem referente a classe ``TestUsuario``
 
 ![Imagem da classe TestUsuario no arquivo test_usuario.py](assets/image_test_usuario.png)
+*Figura 4: Classe TestUsuario*
 
 
 ### Resultado esperado:
