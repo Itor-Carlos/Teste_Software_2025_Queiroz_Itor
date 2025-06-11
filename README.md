@@ -69,7 +69,7 @@ Para executar os testes, execute os passos abaixo
    Use o comando abaixo para clonar o repositório:
 
    ```
-      git clone https://github.com/Itor-Carlos/Teste_Software_2025_Queiroz_Itor.git
+   git clone https://github.com/Itor-Carlos/Teste_Software_2025_Queiroz_Itor.git
    ```
 
 2. **Navegue para o diretório do projeto**  
@@ -79,5 +79,5 @@ Para executar os testes, execute os passos abaixo
    Execute o script de teste com o comando abaixo:
 
    ```
-      python test_usuario.py
+   python test_usuario.py
    ```
