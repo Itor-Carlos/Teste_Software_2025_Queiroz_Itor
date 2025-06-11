@@ -68,7 +68,7 @@ Para executar os testes, execute os passos abaixo
 1. **Clone o repositório**  
    Use o comando abaixo para clonar o repositório:
 
-   `git clone https://github.com/Itor-Carlos/Teste_Software_2025_Queiroz_Itor.git`
+   ```git clone https://github.com/Itor-Carlos/Teste_Software_2025_Queiroz_Itor.git```
 
 2. **Navegue para o diretório do projeto**  
    Abra um terminal de sua preferência na pasta do projeto.
