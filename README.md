@@ -8,11 +8,11 @@
 
 **Participantes da equipe:**
 
-* Heitor Santos
-* Itor Queiroz
-* Lanna Silva
-* Lavínia Santos
-* Rômulo Santana
+* Heitor Saulo Dantas Santos
+* Itor Carlos Souza Queiroz
+* Lanna Luara Novaes Silva
+* Lavínia Louise Rosa Santos
+* Rômulo Menezes De Santana
 
 ---
 
@@ -31,7 +31,7 @@ A questão no Stack Overflow aborda a forma adequada de testar funções em Pyth
 
 ---
 
-## 2. Solução utilizado
+## 2. Solução utilizada
 
 A solução aceita no Stack Overflow utiliza o módulo ``unittest``, especificamente a classe ``TestCase`` e seu método ``assertRaises``, que permite verificar se uma determinada exceção é lançada durante a execução de uma função. Vale a citação de que, apesar da questão enfatizar o uso de ```functions``` (referidas no texto como functions), a solução apresentada neste repositório utiliza de ```métodos```, ou seja, funções dentro de uma classe. Embora o que esteja sendo testado seja um método, o funcionamento do teste não mudaria caso fosse uma função comum: bastaria alterar o segundo parâmetro do método ```assertRaises``` para a função desejada e inserir seus respectivos parâmetros após o nome.
 
