@@ -106,5 +106,5 @@ Para executar os testes, execute os passos abaixo
    Execute o script de teste com o comando abaixo:
 
    ```
-   python test_usuario.py
+   python -m unittest -v .\test_usuario.py
    ```
