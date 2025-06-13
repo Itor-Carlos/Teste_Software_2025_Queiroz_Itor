@@ -35,6 +35,15 @@ A questão no Stack Overflow aborda a forma adequada de testar funções em Pyth
 
 A solução aceita no Stack Overflow utiliza o módulo ``unittest``, especificamente a classe ``TestCase`` e seu método ``assertRaises``, que permite verificar se uma determinada exceção é lançada durante a execução de uma função. Vale a citação de que, apesar da questão enfatizar o uso de ```functions``` (referidas no texto como functions), a solução apresentada neste repositório utiliza de ```métodos```, ou seja, funções dentro de uma classe. Embora o que esteja sendo testado seja um método, o funcionamento do teste não mudaria caso fosse uma função comum: bastaria alterar o segundo parâmetro do método ```assertRaises``` para a função desejada e inserir seus respectivos parâmetros após o nome.
 
+O método ``assertRaises`` é especialmente útil na criação de testes automatizados para garantir que erros esperados ocorram em condições específicas. Esse método possui a seguinte assinatura ``assertRaises(exception, callable, *args, **kwds)``
+
+#### Parâmetros:
+
+- **`exception`**: o tipo da exceção que se espera que seja lançada. Por exemplo: `ValueError`, `TypeError`, etc.
+- **`callable`**: a função ou método que será testado.
+- **`*args`**: argumentos posicionais que serão passados para o `callable`.
+- **`**kwds`**: argumentos nomeados (keyword arguments) que também serão passados para o `callable`.
+
 ## 3. Exposição da solução utilizada:
 
 Criação de uma classe para simular o problema com o nome ``Usuario`` no arquivo ``usuario.py``. Nessa classe é disposto um método chamado ``realizar_login`` que lança uma exceção do tipo ``ValueError`` caso o login ou a senha estejam incorretos. Abaixo uma imagem referente a classe ``Usuario``
@@ -49,11 +58,16 @@ Criação de uma classe de testes unitários no arquivo ``test_usuario.py`` para
 
 *Figura 4: Classe TestUsuario*
 
-
 ### Resultado esperado:
 * A exceção correta deve ser lançada pela função testada
 * O teste deve falhar caso nenhuma exceção ou uma exceção incorreta seja lançada
 * A verificação deve ser automatizada usando assertRaises do módulo unittest
+
+Imagem abaixo referente à saída da execução dos testes implementados na classe ``TestUsuario``, localizada no arquivo ``test_usuario.py``. O resultado exibindo ``ok`` para os métodos da classe ``TestUsuario`` indica que todos os testes foram aprovados com sucesso, ou seja, as exceções do tipo ValueError esperadas foram corretamente lançadas durante a execução.
+
+![Imagem da saída dos testes](assets/result.png)
+
+*Figura 5: Saída dos testes*
 
 ---
 
